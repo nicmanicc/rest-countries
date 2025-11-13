@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { CountryContainer } from './components/CountryContainer';
 import './App.css';
 
 function App() {
@@ -13,7 +14,16 @@ function App() {
     fetchCountries();
   }, []);
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <div className="countriesWrapper">
+        {countries &&
+          countries.map((country, key) => {
+            return <CountryContainer key={key} country={country} />;
+          })}
+      </div>
+    </div>
+  );
 }
 
 export default App;
