@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CountryContainer } from './components/CountryContainer';
 import './App.css';
+import { TitleBar } from './components/TitleBar';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <TitleBar />
       <div className="countriesWrapper">
         {countries &&
           countries.map((country, key) => {

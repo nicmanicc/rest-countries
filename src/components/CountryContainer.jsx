@@ -6,9 +6,16 @@ export const CountryContainer = ({ country }) => {
       </div>
       <div className="countryDescription">
         <h3>{country.name}</h3>
-        <p>Population: {country.population}</p>
-        <p>Region: {country.region}</p>
-        <p>Capital: {country.capital}</p>
+        <p>
+          <span style={{ fontWeight: 'bold' }}>Population:</span>{' '}
+          {country.population}
+        </p>
+        <p>
+          <span style={{ fontWeight: 'bold' }}>Region:</span> {country.region}
+        </p>
+        <p>
+          <span style={{ fontWeight: 'bold' }}>Capital:</span> {country.capital}
+        </p>
       </div>
     </div>
   );

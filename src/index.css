@@ -7,7 +7,7 @@ body {
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--dark-mode-background);
+  background-color: var(--background-color);
 }
 
 code {
@@ -15,11 +15,15 @@ code {
     monospace;
 }
 
-:root {
-  --dark-mode-element: hsl(209, 23%, 22%);
-  --dark-mode-background: hsl(207, 26%, 17%);
-  --light-mode-text: hsl(200, 15%, 8%);
+:root[data-theme='light'] {
+  --text-color: hsl(200, 15%, 8%);
   --light-mode-input: hsl(0, 0%, 50%);
-  --light-mode-background: hsl(0, 0%, 99%);
-  --light-mode-elements: hsl(0, 100%, 100%);
+  --background-color: hsl(0, 0%, 99%);
+  --elements-color: hsl(0, 100%, 100%);
+}
+
+:root[data-theme='dark'] {
+  --text-color: white;
+  --elements-color: hsl(209, 23%, 22%);
+  --background-color: hsl(207, 26%, 17%);
 }
