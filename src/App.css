@@ -1,7 +1,7 @@
 .countriesWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 100px;
   margin: 0 100px;
 }
@@ -42,7 +42,7 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 20px 11%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 
@@ -62,4 +62,44 @@
   border: 0;
   font-size: 16px;
   font-weight: 600;
+}
+
+.filterInputs {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 11%;
+}
+
+.searchInput {
+  width: 35%;
+  height: 50px;
+  padding: 10px 40px;
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.regionInput {
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  padding: 10px 40px;
+  outline: none;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+
+  border-right: 16px solid transparent;
+}
+
+.regionInput::picker {
+  color: black;
+}
+
+.searchInput::placeholder {
+  color: var(--text-color);
+  opacity: 50%;
 }
