@@ -72,7 +72,7 @@
 }
 
 .searchInput {
-  width: 35%;
+  width: 40%;
   height: 50px;
   padding: 10px 40px;
   background-color: var(--elements-color);
@@ -86,7 +86,7 @@
 .regionInput {
   background-color: var(--elements-color);
   color: var(--text-color);
-  padding: 10px 40px;
+  padding: 10px 5%;
   outline: none;
   border: 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
